@@ -143,71 +143,6 @@ nav a:hover{
     box-shadow:0 12px 35px rgba(245, 87, 108, 0.6);
 }
 
-/* DESTINATIONS SECTION */
-.countries{
-    padding:80px 60px;
-    background-color:#f5f7fa;
-}
-
-.countries h2{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:60px;
-    color:#1e3c72;
-    font-weight:700;
-}
-
-.countries{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:40px;
-    padding:80px 60px;
-}
-
-/* CARDS */
-.card-link{
-    text-decoration:none;
-    color:inherit;
-    display:block;
-}
-
-.card{
-    background:white;
-    border-radius:16px;
-    overflow:hidden;
-    text-align:center;
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
-    transition:all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor:pointer;
-}
-
-.card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 15px 40px rgba(0,0,0,0.15);
-}
-
-/* IMAGE */
-.card img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    display:block;
-}
-
-/* COUNTRY NAME */
-.card h3{
-    padding:20px 15px 10px;
-    font-size:24px;
-    color:#1e3c72;
-    font-weight:700;
-}
-
-.card p{
-    padding:0 15px 20px;
-    font-size:14px;
-    color:#666;
-    font-weight:400;
-}
 
 /* CONTACT SECTION */
 .contact{
@@ -300,11 +235,6 @@ footer p{
 
     .hero p{
         font-size:18px;
-    }
-
-    .countries{
-        grid-template-columns:1fr;
-        padding:40px 30px;
     }
 
     .contact{
