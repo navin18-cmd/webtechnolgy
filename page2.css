@@ -1,0 +1,227 @@
+/* GOOGLE FONT STYLE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body{
+    background-color:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+    background:linear-gradient(135deg, #4facfe, #00f2fe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    padding:10px 18px;
+    border-radius:25px;
+    transition:all 0.3s ease;
+    font-weight:500;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,0.2);
+    transform:translateY(-2px);
+}
+
+/* REGISTRATION PAGE STYLES */
+.registration-section{
+    min-height:100vh;
+    padding:100px 60px 80px;
+    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.form-container{
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.3);
+    max-width:700px;
+    width:100%;
+}
+
+.form-container h1{
+    color:#1e3c72;
+    font-size:36px;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+.form-container .subtitle{
+    color:#666;
+    text-align:center;
+    margin-bottom:40px;
+    font-size:16px;
+}
+
+.registration-form{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    color:#333;
+    font-weight:600;
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    padding:14px 16px;
+    border:2px solid #e0e0e0;
+    border-radius:10px;
+    font-size:15px;
+    transition:all 0.3s ease;
+    font-family:'Poppins',sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    outline:none;
+    border-color:#667eea;
+    box-shadow:0 0 0 3px rgba(102,126,234,0.1);
+}
+
+.form-group textarea{
+    resize:vertical;
+    min-height:100px;
+}
+
+.submit-btn{
+    background:linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color:white;
+    border:none;
+    padding:16px 40px;
+    font-size:18px;
+    font-weight:600;
+    border-radius:50px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    margin-top:10px;
+    box-shadow:0 8px 25px rgba(245,87,108,0.4);
+}
+
+.submit-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 35px rgba(245,87,108,0.6);
+}
+
+/* FOOTER */
+footer{
+    background:#1e3c72;
+    color:white;
+    padding:30px 60px;
+    text-align:center;
+    border-top:3px solid #4facfe;
+}
+
+footer p{
+    margin-bottom:15px;
+    font-weight:500;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.social-links a{
+    color:#4facfe;
+    text-decoration:none;
+    font-weight:600;
+    transition:all 0.3s ease;
+}
+
+.social-links a:hover{
+    color:#f5576c;
+    transform:translateY(-3px);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width:768px){
+    header{
+        flex-direction:column;
+        gap:20px;
+        padding:15px 30px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    footer{
+        padding:20px 30px;
+    }
+
+    .registration-section{
+        padding:60px 30px;
+    }
+
+    .form-container{
+        padding:30px 25px;
+    }
+
+    .form-container h1{
+        font-size:28px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+}
